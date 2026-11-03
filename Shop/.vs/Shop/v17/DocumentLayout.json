@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5EE430DD-CD49-4568-896E-8C52F81BF856}|Shop.API\\Shop.API.csproj|c:\\users\\vahid\\source\\repos\\vahidabdolmaleki\\onlinestore\\shop\\shop.api\\shop.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{5EE430DD-CD49-4568-896E-8C52F81BF856}|Shop.API\\Shop.API.csproj|solutionrelative:shop.api\\shop.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A0F603E-5163-439D-A669-0889BBBB9628}|Shop.Infrastructure\\Shop.Infrastructure.csproj|C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\shop.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A0F603E-5163-439D-A669-0889BBBB9628}|Shop.Infrastructure\\Shop.Infrastructure.csproj|solutionrelative:shop.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C24943D-9CC5-4306-ADB2-FCCE5DA373BC}|Shop.Application\\Shop.Application.csproj|C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\shop.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C24943D-9CC5-4306-ADB2-FCCE5DA373BC}|Shop.Application\\Shop.Application.csproj|solutionrelative:shop.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2785533E-8247-4BF5-ABCB-F419C3471059}|Shop.Domain\\Shop.Domain.csproj|C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\shop.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2785533E-8247-4BF5-ABCB-F419C3471059}|Shop.Domain\\Shop.Domain.csproj|solutionrelative:shop.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +35,54 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Shop.API",
+              "DocumentMoniker": "C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\Shop.API\\Shop.API.csproj",
+              "RelativeDocumentMoniker": "Shop.API\\Shop.API.csproj",
+              "ToolTip": "C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\Shop.API\\Shop.API.csproj",
+              "RelativeToolTip": "Shop.API\\Shop.API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-02T13:36:15.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\Shop.Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "Shop.Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\Shop.Infrastructure\\Class1.cs",
+              "RelativeToolTip": "Shop.Infrastructure\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T12:51:15.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\Shop.Application\\Class1.cs",
+              "RelativeDocumentMoniker": "Shop.Application\\Class1.cs",
+              "ToolTip": "C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\Shop.Application\\Class1.cs",
+              "RelativeToolTip": "Shop.Application\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T12:47:57.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\Shop.Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "Shop.Domain\\Class1.cs",
+              "ToolTip": "C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\Shop.Domain\\Class1.cs",
+              "RelativeToolTip": "Shop.Domain\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T12:47:18.995Z"
             }
           ]
         }
