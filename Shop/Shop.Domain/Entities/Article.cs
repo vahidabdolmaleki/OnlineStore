@@ -70,6 +70,6 @@ namespace Shop.Domain.Entities
             = new List<ArticleImage>();
 
         public ICollection<ArticleTagMap> Tags { get; set; }
-            = new List<ArticleTagMap>();
+            = new List<ArticleTagMap>() ;
     }
 }

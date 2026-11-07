@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.9.34902.65
+# Visual Studio Version 18
+VisualStudioVersion = 18.11.12328.437 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Domain", "Shop.Domain\Shop.Domain.csproj", "{2785533E-8247-4BF5-ABCB-F419C3471059}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Infrastructure", "Shop.Infrastructure\Shop.Infrastructure.csproj", "{3A0F603E-5163-439D-A669-0889BBBB9628}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.API", "Shop.API\Shop.API.csproj", "{5EE430DD-CD49-4568-896E-8C52F81BF856}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Persistence", "Shop.Persistence\Shop.Persistence.csproj", "{C9B0FD10-C635-4CF7-B200-C087CC73014D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5EE430DD-CD49-4568-896E-8C52F81BF856}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EE430DD-CD49-4568-896E-8C52F81BF856}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EE430DD-CD49-4568-896E-8C52F81BF856}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B0FD10-C635-4CF7-B200-C087CC73014D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B0FD10-C635-4CF7-B200-C087CC73014D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B0FD10-C635-4CF7-B200-C087CC73014D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B0FD10-C635-4CF7-B200-C087CC73014D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
