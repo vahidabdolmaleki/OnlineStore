@@ -1,7 +1,20 @@
+using Microsoft.EntityFrameworkCore;
+using Shop.Domain.Interfaces;
+using Shop.Persistence.Context;
+using Shop.Persistence.UnitOfWork;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+
+// تنظیم DbContext
+builder.Services.AddDbContext<ShopDbContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// تنظیم UnitOfWork
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

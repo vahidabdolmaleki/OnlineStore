@@ -82,17 +82,7 @@ namespace Shop.Domain.Enums
         Returned = 7
     }
 }
-namespace Shop.Domain.Enums
-{
-    public enum DocumentType
-    {
-        Invoice = 1,
-        Warranty = 2,
-        CustomerDocument = 3,
-        OrderDocument = 4,
-        Other = 5
-    }
-}
+
 namespace Shop.Domain.Enums
 {
     public enum CouponType

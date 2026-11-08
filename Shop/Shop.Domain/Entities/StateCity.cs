@@ -13,10 +13,8 @@ namespace Shop.Domain.Entities
 
         public StateCity? Parent { get; set; }
 
-        public ICollection<StateCity> Children { get; set; }
-            = new List<StateCity>();
+        public ICollection<StateCity> Children { get; set; } = [];
 
-        public ICollection<AddressDetails> Addresses { get; set; }
-            = new List<AddressDetails>();
+        public ICollection<AddressDetails> Addresses { get; set; } = [];
     }
 }

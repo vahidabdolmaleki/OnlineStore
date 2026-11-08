@@ -17,4 +17,6 @@ namespace Shop.Domain.Entities
 
         public Product RelatedProduct { get; set; } = null!;
     }
+
+
 }

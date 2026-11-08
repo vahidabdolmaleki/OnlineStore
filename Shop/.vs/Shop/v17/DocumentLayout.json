@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{3A0F603E-5163-439D-A669-0889BBBB9628}|Shop.Infrastructure\\Shop.Infrastructure.csproj|solutionrelative:shop.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C24943D-9CC5-4306-ADB2-FCCE5DA373BC}|Shop.Application\\Shop.Application.csproj|C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\shop.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C24943D-9CC5-4306-ADB2-FCCE5DA373BC}|Shop.Application\\Shop.Application.csproj|solutionrelative:shop.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\shop.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:shop.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2785533E-8247-4BF5-ABCB-F419C3471059}|Shop.Domain\\Shop.Domain.csproj|C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\shop.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2785533E-8247-4BF5-ABCB-F419C3471059}|Shop.Domain\\Shop.Domain.csproj|solutionrelative:shop.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Vahid\\source\\repos\\vahidabdolmaleki\\OnlineStore\\Shop\\shop.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:shop.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +58,8 @@
               "RelativeToolTip": "Shop.Infrastructure\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T12:51:15.027Z"
+              "WhenOpened": "2026-11-02T12:51:15.027Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -70,7 +71,8 @@
               "RelativeToolTip": "Shop.Application\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T12:47:57.903Z"
+              "WhenOpened": "2026-11-02T12:47:57.903Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -82,7 +84,8 @@
               "RelativeToolTip": "Shop.Domain\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T12:47:18.995Z"
+              "WhenOpened": "2026-11-02T12:47:18.995Z",
+              "EditorCaption": ""
             }
           ]
         }

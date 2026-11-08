@@ -40,8 +40,6 @@ namespace Shop.Domain.Entities
         public ICollection<Images> Images { get; set; }
             = new List<Images>();
 
-        public ICollection<Document> Documents { get; set; }
-            = new List<Document>();
 
         public ICollection<ProductReview> Reviews { get; set; }
             = new List<ProductReview>();
