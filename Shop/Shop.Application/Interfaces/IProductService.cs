@@ -1,4 +1,7 @@
-﻿using Shop.Application.DTOs.Products;
+﻿using Shop.Application.DTOs.Products.Color;
+using Shop.Application.DTOs.Products.Details;
+using Shop.Application.DTOs.Products.Products;
+using Shop.Application.DTOs.Products.Variant;
 
 namespace Shop.Application.Interfaces;
 

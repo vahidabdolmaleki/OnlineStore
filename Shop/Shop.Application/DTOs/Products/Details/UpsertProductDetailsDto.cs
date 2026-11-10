@@ -1,10 +1,10 @@
-﻿namespace Shop.Application.DTOs.Products;
+﻿namespace Shop.Application.DTOs.Products.Details;
 
-public class ProductDetailsDto
+public class UpsertProductDetailsDto
 {
-    public int Id { get; set; }
     public int ProductId { get; set; }
     public string? Brand { get; set; }
+
     public DateTime? ProductionDate { get; set; }
     public string? BatchNumber { get; set; }
 
@@ -18,5 +18,4 @@ public class ProductDetailsDto
     public decimal? Weight { get; set; }
     public string? Material { get; set; }
     public string? CountryOfOrigin { get; set; }
-
 }

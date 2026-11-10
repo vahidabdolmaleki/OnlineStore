@@ -1,4 +1,4 @@
-﻿namespace Shop.Application.DTOs.Products;
+﻿namespace Shop.Application.DTOs.Products.Variant;
 
 public class UpsertProductVariantDto
 {

@@ -1,4 +1,6 @@
-﻿namespace Shop.Application.DTOs.Products;
+﻿using Shop.Application.DTOs.Products.Variant;
+
+namespace Shop.Application.DTOs.Products.Color;
 
 public class ProductColorDto
 {
