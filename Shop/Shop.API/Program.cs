@@ -23,6 +23,7 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<ICategoryService, Shop.Application.Services.CategoryService>();
 builder.Services.AddScoped<IProductService, Shop.Application.Services.ProductService>();
 builder.Services.AddScoped<IProductImageService, ProductImageService>();
+builder.Services.AddScoped<IProductRelationService, ProductRelationService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
