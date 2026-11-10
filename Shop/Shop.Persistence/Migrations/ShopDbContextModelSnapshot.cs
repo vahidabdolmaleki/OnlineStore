@@ -297,6 +297,9 @@ namespace Shop.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("BatchNumber")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Brand")
                         .HasColumnType("nvarchar(max)");
 
@@ -332,6 +335,9 @@ namespace Shop.Persistence.Migrations
 
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime?>("ProductionDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<decimal?>("Radius")
                         .HasColumnType("decimal(18,2)");
