@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using Shop.Application.DTOs.Person;
+using Shop.Application.DTOs.Person.PersonType;
 using Shop.Application.Interfaces;
 using Shop.Domain.Entities;
 using Shop.Domain.Interfaces;

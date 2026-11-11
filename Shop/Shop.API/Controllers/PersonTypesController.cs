@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Shop.Application.DTOs.Person;
+using Shop.Application.DTOs.Person.PersonType;
 using Shop.Application.Interfaces;
 
 namespace Shop.API.Controllers;

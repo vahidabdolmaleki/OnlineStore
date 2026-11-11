@@ -1,4 +1,4 @@
-﻿using Shop.Application.DTOs.Person;
+﻿using Shop.Application.DTOs.Person.PersonType;
 
 namespace Shop.Application.Interfaces;
 
