@@ -72,6 +72,13 @@ public class ShopDbContext(DbContextOptions<ShopDbContext> options) : DbContext(
         {
             property.SetColumnType("decimal(18,2)");
         }
+        modelBuilder.Entity<AddressDetails>()
+        .Property(x => x.Latitude)
+        .HasColumnType("decimal(9,6)");
+
+        modelBuilder.Entity<AddressDetails>()
+                .Property(x => x.Longitude)
+                .HasColumnType("decimal(9,6)");
 
         // ۴. اعمال فیلتر سراسری Soft Delete برای تمام موجودیت‌های دارای IsActive
         foreach (var entityType in modelBuilder.Model.GetEntityTypes())
