@@ -30,6 +30,8 @@ builder.Services.AddScoped<IPersonTypeService, PersonTypeService>();
 builder.Services.AddScoped<IPersonService, PersonService>();
 builder.Services.AddScoped<IShoppingBasketService, ShoppingBasketService>();
 builder.Services.AddScoped<IAddressService, AddressService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

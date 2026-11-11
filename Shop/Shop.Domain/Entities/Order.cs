@@ -61,5 +61,24 @@ namespace Shop.Domain.Entities
 
         public ICollection<Shipping> Shippings { get; set; }
             = new List<Shipping>();
+
+ 
+
+        // ✅ روش پرداخت (آنلاین، در محل، کارت به کارت، کیف پول)
+        public PaymentMethod? PaymentMethod { get; set; }
+
+
+
+        // ✅ نام شرکت حمل (پست، تیپاکس، ...)
+        public string? CourierName { get; set; }
+
+        // ✅ تاریخ‌های مهم چرخه
+
+        public DateTime? ShippedAtUtc { get; set; }
+        public DateTime? DeliveredAtUtc { get; set; }
+        public DateTime? CancelledAtUtc { get; set; }
+
+        // ✅ تاریخ/ساعت ثبت سفارش
+        public DateTime OrderDateUtc { get; set; } = DateTime.UtcNow;
     }
 }

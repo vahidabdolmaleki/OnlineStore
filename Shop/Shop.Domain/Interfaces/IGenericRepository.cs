@@ -11,4 +11,12 @@ public interface IGenericRepository<T> where T : BaseEntity
     Task AddAsync(T entity);
     void Update(T entity);
     void Delete(T entity);
+
+
+
+    Task<T?> GetFirstOrDefaultAsync(
+        Expression<Func<T, bool>> predicate,
+        params Expression<Func<T, object>>[] includes);
+
+
 }

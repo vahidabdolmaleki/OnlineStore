@@ -840,17 +840,26 @@ namespace Shop.Persistence.Migrations
                     b.Property<int?>("AddressId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime?>("CancelledAtUtc")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime?>("CompletedAtUtc")
                         .HasColumnType("datetime2");
 
                     b.Property<int?>("CouponId")
                         .HasColumnType("int");
 
+                    b.Property<string>("CourierName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CreateDateUtc")
                         .HasColumnType("datetime2");
 
                     b.Property<int?>("CreatedByPersonId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime?>("DeliveredAtUtc")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -870,12 +879,18 @@ namespace Shop.Persistence.Migrations
                     b.Property<int?>("ModifiedByPersonId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("OrderDateUtc")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("OrderNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("PaidAtUtc")
                         .HasColumnType("datetime2");
+
+                    b.Property<int?>("PaymentMethod")
+                        .HasColumnType("int");
 
                     b.Property<int>("PaymentStatus")
                         .HasColumnType("int");
@@ -893,6 +908,9 @@ namespace Shop.Persistence.Migrations
                     b.Property<string>("ReceiverPhone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ShippedAtUtc")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("ShippingAddress")
                         .IsRequired()
