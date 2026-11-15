@@ -139,14 +139,14 @@ public class OrderService(IUnitOfWork uow) : IOrderService
         }
 
         var shippingAddress = string.Join("، ", new List<string>
-        {
-            stateTitle,
-            city.Title,
-            addressDetails.Street,
-            addressDetails.Alley,
-            string.IsNullOrWhiteSpace(addressDetails.Number) ? null : $"پلاک {addressDetails.Number}",
-            string.IsNullOrWhiteSpace(addressDetails.Unit) ? null : $"واحد {addressDetails.Unit}"
-        }
+    {
+        stateTitle,
+        city.Title,
+        addressDetails.Street,
+        addressDetails.Alley,
+        string.IsNullOrWhiteSpace(addressDetails.Number) ? null : $"پلاک {addressDetails.Number}",
+        string.IsNullOrWhiteSpace(addressDetails.Unit) ? null : $"واحد {addressDetails.Unit}"
+    }
         .Where(x => !string.IsNullOrWhiteSpace(x)));
 
         // ---------- ۳. سبد خرید و اقلام آن ----------
@@ -230,7 +230,7 @@ public class OrderService(IUnitOfWork uow) : IOrderService
 
         decimal subTotal = 0;
 
-        // ---------- ۷. پردازش اقلام، کسر از انبار و افزودن به سفارش ----------
+        // ---------- ۷. پردازش اقلام و افزودن به سفارش بدون کسر موجودی ----------
         foreach (var basketItem in basketItems)
         {
             var product = productsById[basketItem.ProductId];
@@ -239,23 +239,6 @@ public class OrderService(IUnitOfWork uow) : IOrderService
             decimal currentPrice = product.Price;
             decimal lineTotal = currentPrice * basketItem.Quantity;
             subTotal += lineTotal;
-
-            int neededQuantity = basketItem.Quantity;
-            var itemInventories = inventoryMap[(basketItem.ProductId, basketItem.ProductVariantId)];
-
-            foreach (var inv in itemInventories)
-            {
-                if (neededQuantity <= 0) break;
-
-                int availableInThisWarehouse = inv.AvailableQuantity;
-                if (availableInThisWarehouse <= 0) continue;
-
-                int deduct = Math.Min(neededQuantity, availableInThisWarehouse);
-                inv.Quantity -= deduct;
-                neededQuantity -= deduct;
-
-                uow.Repository<WarehouseInventory>().Update(inv);
-            }
 
             order.Items.Add(new OrderItem
             {
