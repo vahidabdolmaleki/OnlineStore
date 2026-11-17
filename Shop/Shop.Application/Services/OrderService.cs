@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Shop.Application.Services;
 
-public class OrderService(IUnitOfWork uow) : IOrderService
+public class OrderService(IUnitOfWork uow,IPaymentFinalizer paymentFinalizer) : IOrderService
 {
 
     public async Task<PagedOrderResultDto> GetOrdersAsync(OrderFilterDto filter)
@@ -274,21 +274,23 @@ public class OrderService(IUnitOfWork uow) : IOrderService
         return order.Id;
     }
 
-    public async Task MarkPaidAsync(int orderId, PaymentMethod method, string? referenceId = null)
+    public async Task MarkPaidAsync(
+        int orderId,
+        PaymentMethod method,
+        string? referenceId = null)
     {
-        var order = await uow.Repository<Order>().GetByIdAsync(orderId)
-            ?? throw new InvalidOperationException("سفارش یافت نشد.");
+        if (string.IsNullOrWhiteSpace(referenceId))
+        {
+            throw new ArgumentException(
+                "شماره مرجع پرداخت الزامی است.");
+        }
 
-        if (order.Status != OrderStatus.Pending)
-            throw new InvalidOperationException("وضعیت فعلی سفارش اجازه‌ی پرداخت را نمی‌دهد.");
-
-        order.PaymentStatus = PaymentStatus.Paid;
-        order.PaymentMethod = method;
-        order.PaidAtUtc = DateTime.UtcNow;
-        order.Status = OrderStatus.Confirmed;
-
-        await uow.CompleteAsync();
+        await paymentFinalizer.FinalizeAsync(
+            orderId,
+            method,
+            referenceId);
     }
+
 
     public async Task MarkShippedAsync(int orderId, string trackingCode, string courierName)
     {

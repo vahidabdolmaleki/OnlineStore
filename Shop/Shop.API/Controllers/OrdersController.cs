@@ -37,7 +37,7 @@ public class OrdersController(IOrderService orderService) : ControllerBase
         try
         {
         // فعلاً برای تست سریع، فرض می‌کنیم کاربر ۱ است (بعداً با سیستم لاگین جایگزین کنید)
-            int personId = 1;
+            int personId = 3;
             var orderId = await orderService.CheckoutAsync(personId, checkoutDto);
             return Ok(new { OrderId = orderId, Message = "سفارش با موفقیت ثبت شد." });
         }

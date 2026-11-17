@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using Microsoft.EntityFrameworkCore;
 using Shop.Domain.Common;
 using Shop.Domain.Interfaces;
 using Shop.Persistence.Context;
 using Shop.Persistence.Repositories;
+using System.Collections;
+using System.Data;
 
 namespace Shop.Persistence.UnitOfWork;
 
@@ -32,7 +34,42 @@ public class UnitOfWork(ShopDbContext context) : IUnitOfWork
     {
         return await _context.SaveChangesAsync();
     }
+    public async Task ExecuteInTransactionAsync(
+       Func<CancellationToken, Task> action,
+       IsolationLevel isolationLevel = IsolationLevel.Serializable,
+       CancellationToken cancellationToken = default)
+    {
+        ArgumentNullException.ThrowIfNull(action);
 
+        // در صورت فعال بودن retry در EF، کل تراکنش دوباره اجرا می‌شود.
+        var strategy = _context.Database.CreateExecutionStrategy();
+
+        await strategy.ExecuteAsync(async () =>
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+
+            await using var transaction =
+                await _context.Database.BeginTransactionAsync(
+                    isolationLevel,
+                    cancellationToken);
+
+            try
+            {
+                await action(cancellationToken);
+
+                cancellationToken.ThrowIfCancellationRequested();
+
+                await transaction.CommitAsync(cancellationToken);
+            }
+            catch
+            {
+                // تغییرات ردیابی‌شده پس از شکست تراکنش نباید باقی بمانند.
+                // DisposeAsync تراکنشِ commitنشده را rollback می‌کند.
+                _context.ChangeTracker.Clear();
+                throw;
+            }
+        });
+    }
     public void Dispose()
     {
         _context.Dispose();
